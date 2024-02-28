@@ -1,0 +1,68 @@
+/* App.css */
+
+body {
+  background-color: #FFFBD2;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.App {
+  background-color: #FFFBD2;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.App-header {
+  background-color: #FFFBD2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: rgb(22, 4, 4);
+}
+
+.logo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100%;
+  animation: logoAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Apply hover effect on images */
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+/* Animation for the logo */
+@keyframes logoAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
